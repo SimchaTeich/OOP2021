@@ -294,6 +294,7 @@ public class GraphAlgo implements DirectedWeightedGraphAlgorithms {
         while(itSrc.hasNext())
         {
             int src = itSrc.next().getKey();
+
             Iterator<NodeData> itDst = _g.nodeIter();
             {
                 while (itDst.hasNext())
@@ -316,7 +317,6 @@ public class GraphAlgo implements DirectedWeightedGraphAlgorithms {
             {
                 returnCenter = src;
             }
-
         }
 
         return _g.getNode(returnCenter);
